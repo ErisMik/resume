@@ -44,9 +44,15 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Custom Commands
+\newcommand{\textItem}[1]{
+  \item{
+    {#1 \vspace{-2pt}}
+  }
+}
+
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{#2 \vspace{-2pt}}
   }
 }
 
@@ -56,6 +62,12 @@
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\skillsItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
 }
 
 \newcommand{\skillsSubheading}[1]{
@@ -89,23 +101,29 @@
 \end{tabular*}
 
 %%% Summary %%%
+\section{Software Engineer}
+ \resumeSubHeadingListStart
+  \textItem{Looking for Software Developer \& Engineering internship and coop opportunities}
+  \textItem{Experienced in object oriented programming: Developing, Testing and Debugging at multiple hardware and software levels}
+  \textItem{Knowledgeable in Agile development methodologies; Team and Self-Directed settings}
+  \textItem{Excellent teamwork and communication skills}
+ \resumeSubHeadingListEnd
 
 %%% PROGRAMMING SKILLS %%%
 \section{Programming Skills}
  \resumeSubHeadingListStart
     \skillsSubheading {Languages}
       \resumeItemListStart
-        \resumeItem{Fluent} {C, C++, Java, Python, Javascript, Bash, HTML/CSS}
-        \resumeItem{Proficient} {Ruby/Rails, Assembly, Verilog, Wiring, Rust}
-        \resumeItem{Familiar} {iOS (Swift), Android (Java), MySQL}
+        \skillsItem{Fluent} {C, C++, Java, Python, Javascript, Bash, HTML/CSS}
+        \skillsItem{Proficient} {Ruby/Rails, Assembly, Verilog, Wiring, Rust}
+        \skillsItem{Familiar} {iOS (Swift), Android (Java), MySQL}
       \resumeItemListEnd
 
     \skillsSubheading {Technologies}
       \resumeItemListStart
-        \resumeItem{Frameworks \& Libraries} {Django, Rails (Ruby), Terraform}
-        \resumeItem{Tools} {Yocto, Jenkins, AWS}
+        \skillsItem{Frameworks \& Libraries} {Django, Rails (Ruby), Terraform}
+        \skillsItem{Tools} {Yocto, Jenkins, AWS}
       \resumeItemListEnd
-
  \resumeSubHeadingListEnd
 
 %%% EXPERIENCE %%%
@@ -143,6 +161,8 @@
         \resumeItem{} {Created Yocto recipes and modified recipes to integrate with new build system, reducing time to configure builds into a single configuration line}
         \resumeItem{} {Created web based remote testing and install application, turning 30 minute or longer manual processes into simple automated tasks and preventing human error}
       \resumeItemListEnd
+      
+    \bigskip  % To align with the next page
 
     \resumeSubheading
       {Minesense}{Vancouver, BC}
@@ -200,7 +220,7 @@
     \resumeSubItem{UBC Code the Change}
       {Full Stack Developer on Chingari project; 2017 -> 2018}
     \resumeSubItem{UBC Baja Team}
-      {Suspension Subteam, microcontroller sensor project; 2016 -> 2017}
+      {Suspension Sub-team, microcontroller sensor project; 2016 -> 2017}
   \resumeSubHeadingListEnd
 
 \end{document}
