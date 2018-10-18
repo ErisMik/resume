@@ -1,0 +1,206 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Eric Mikulin Resume, 2018
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Latex Header
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Custom Commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\skillsSubheading}[1]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Resume Start
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%% HEADING %%%
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://erismik.github.io/}{\Large Eric Mikulin}} & Email : \href{mailto:ericm99@gmail.com}{ericm99@gmail.com}\\
+  \href{http://erismik.github.io/}{http://erismik.github.io/} & Mobile : +1-403-992-5497 \\
+\end{tabular*}
+
+%%% Summary %%%
+
+%%% PROGRAMMING SKILLS %%%
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+    \skillsSubheading {Languages}
+      \resumeItemListStart
+        \resumeItem{Fluent} {C, C++, Java, Python, Javascript, Bash, HTML/CSS}
+        \resumeItem{Proficient} {Ruby/Rails, Assembly, Verilog, Wiring, Rust}
+        \resumeItem{Familiar} {iOS (Swift), Android (Java), MySQL}
+      \resumeItemListEnd
+
+    \skillsSubheading {Technologies}
+      \resumeItemListStart
+        \resumeItem{Frameworks \& Libraries} {Django, Rails (Ruby), Terraform}
+        \resumeItem{Tools} {Yocto, Jenkins, AWS}
+      \resumeItemListEnd
+
+ \resumeSubHeadingListEnd
+
+%%% EXPERIENCE %%%
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {D-Wave Systems}{Burnaby, BC}
+      {Systems Software Coop}{May 2018 -> Present}
+      \resumeItemListStart
+        \resumeItem{} {Created automated docs website publishing pipeline with Terraform and Jenkins, saving time by completely automating a long manual build  process}
+        \resumeItem{} {Wrote API endpoints in Django backend to add critical functionality}
+        \resumeItem{} {Created a large number of relevant django unit tests alongside endpoints that increased test coverage and reduced the number of regression  bugs introduced into continuous integration}
+        \resumeItem{} {Created multiple frontend views using React framework}
+        \resumeItem{} {Wrote and maintained backend integration with Zendesk and Salesforce that allowed for the Business Team to access new leads and generate  reports}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Novax Industries}{Delta, BC}
+      {Software Programmer}{October 2017 -> March 2018}
+      \resumeItemListStart
+        \resumeItem{} {Wrote C userspace drivers in embedded system for i2c gpio and sd card}
+        \resumeItem{} {Python and Bash scripting, to increase the capabilities of the embedded system}
+        \resumeItem{} {Updated XML configuration library, to be faster and more robust, as well as align with new specs}
+        \resumeItem{} {Created Yocto recipes and layers for embedded device, to improving time deploy to embedded devices during development}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Minesense}{Vancouver, BC}
+      {Software Intern}{May 2017 -> Aug 2017}
+      \resumeItemListStart
+        \resumeItem{} {C/C++ Application development and maintenance for embedded system}
+        \resumeItem{} {Rewrote existing C++ code into object oriented C++ classes that improved embedded system performance and time to integrate new features}
+        \resumeItem{} {Wrote kernel module to expose application settings in the proc filesystem, saving embedded system configuration time and complexity}
+        \resumeItem{} {Created Yocto recipes and modified recipes to integrate with new build system, reducing time to configure builds into a single configuration line}
+        \resumeItem{} {Created web based remote testing and install application, turning 30 minute or longer manual processes into simple automated tasks and preventing human error}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Minesense}{Vancouver, BC}
+      {Software Intern}{June 2016 -> August 2016}
+      \resumeItemListStart
+        \resumeItem{} {Created Unix shell and Python scripts for use in embedded system}
+        \resumeItem{} {Manually patched and compiled Linux kernel with real time and custom patches, to improve IO throughput of embedded system}
+        \resumeItem{} {Modified kernel init and initramfs to boot with overlayfs (Union filesystem), to improve embedded system robustness and reliability during frequent unexpected power cuts}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Minesense}{Vancouver, BC}
+      {Software Intern}{June 2015 -> August 2015}
+      \resumeItemListStart
+        \resumeItem{} {Created a Python unittest framework using python unittest and fabric to test on remote systems, saving developer time by allowing remote testing from local machines}
+        \resumeItem{} {Setup and integrated unittest framework into Jenkins for continuous integration, improving testing coverage by automating manual testing tasks}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%%% EDUCATION %%%
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of British Columbia}{Vancouver, BC}
+      {Bachelors of Applied Science in Computer Engineering}{Sept. 2016 -- Expected May 2021}
+    \resumeSubheading
+      {Sir Winston Churchill HS}{Calgary, AB}
+      {International Baccalaureate Curriculum}{Sept. 2013 -- July. 2016}
+  \resumeSubHeadingListEnd
+
+%%% Qualifications %%%
+\section{Qualifications}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Canadian Amateur Radio License}
+      {Basic w/ Honors; Achieved 2017}
+  \resumeSubHeadingListEnd
+
+%%% Awards %%%
+\section{Awards}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Best use of AWS, et al.}
+      {NW Hacks 2018, University of British Columbia; Achieved 2018}
+    \resumeSubItem{Best Domain}
+      {NW Hacks 2017, University of British Columbia; Achieved 2017 }
+    \resumeSubItem{2\textsuperscript{nd} place}
+      {Calgary Collegiate Coding Competition, University of Calgary; Achieved 2016}
+  \resumeSubHeadingListEnd
+
+%%% Clubs/Teams %%%
+\section{Clubs \& Design Teams}
+  \resumeSubHeadingListStart
+    \resumeSubItem{UBC Unmanned Aircraft Team}
+      {Software developer for Ground Control Systems; 2018}
+    \resumeSubItem{UBC Code the Change}
+      {Full Stack Developer on Chingari project; 2017 -> 2018}
+    \resumeSubItem{UBC Baja Team}
+      {Suspension Subteam, microcontroller sensor project; 2016 -> 2017}
+  \resumeSubHeadingListEnd
+
+\end{document}
