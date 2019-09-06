@@ -56,6 +56,12 @@
   }
 }
 
+\newcommand{\annotatedResumeItem}[2]{
+  \item\hspace{-14mm}\textit{#1}\hspace{4.5mm}\small{
+        {#2 \vspace{-2pt}}
+  }
+}
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -134,7 +140,7 @@
       {Zaber Technologies Inc.}{Vancouver, BC}
       {Software Co-op}{May 2019 -- Present}
       \resumeItemListStart
-        \resumeItem{} {Added C++ language compatibility to the Zaber Motion Library using EJS templates and protocol buffers. This includes the setup of the CI build, packaging and deployment systems for the finished library on multiple OSes and architectures.}
+        \resumeItem{} {Added C++ language capability to the Zaber Motion Library using EJS templates and protocol buffers. This includes the setup of the CI build, packaging and deployment systems for the finished library on multiple OSes and architectures.}
         \resumeItem{} {Implemented core Go library functionality for the Zaber Motion Library. This included ASCII and binary communication protocol features required to release the library.}
       \resumeItemListEnd
 
@@ -170,23 +176,21 @@
       {Minesense Technologies Ltd.}{Vancouver, BC} 
       {Software Intern}{Summers of 2015, 2016 and 2017}
       \resumeItemListStart
-      % 2017
-        \resumeItem{} {General C/C++ application development and maintenance for multiple x86 based Linux embedded PCs.}
+      
+		\annotatedResumeItem{2017} {General C/C++ application development and maintenance for multiple x86 based Linux embedded PCs.}
         \resumeItem{} {Rewrote existing C++ code for transferring large amounts of spectrum data between embedded PCs into object oriented C++ classes. The new classes improved system performance and reduced the time to integrate new features.}
         \resumeItem{} {Wrote a kernel module to expose embedded application settings in the Linux /proc filesystem, reducing embedded system configuration time and complexity and therefore speeding up application development and testing as well as allowing run-time configuration changes to facilitate testing on a read-only disk.}
         \resumeItem{} {Wrote an automated update utility that allowed for automated updates across multiple write-protected disk partitions which reduced the update time from 20+ minutes to a few minutes and eliminated human error.}
         \resumeItem{} {Created over 10 new Yocto recipes and modified several existing recipes to integrate the code into a new automated build system, improving the time to configure builds by reducing it into a single configuration line.}
         \resumeItem{} {Created a web-based remote testing and install application, turning a 30+ minute error-prone manual install and configuration processes into simple automated task that could install the software in less that 5 minutes. The application could also automatically test the system configuration, making the developer time to test the device negligible.}
 
-		% 2016
-        \resumeItem{} {Created several Unix shell and Python scripts for use in an x86 based embedded Linux system.}
+        \annotatedResumeItem{2016 } {Created several Unix shell and Python scripts for use in an x86 based embedded Linux system.}
         \resumeItem{} {Manually patched and compiled the Linux kernel with real-time and other custom patches in order to improve the I/O throughput of the system, allowing it to achieve critical system performance requirements.}
         \resumeItem{} {Modified the Linux kernel init script and initramfs to boot with overlayfs (Union filesystem) to make the system read-only from disk. This improved the embedded PC robustness and reliability during frequent but unexpected power cuts.}
 
-		% 2015
-        \resumeItem{} {Created an automated unit testing framework using Jenkins, Python unittest and Fabric that allowed developers to test remote embedded Linux systems from their local machines.}
-%        \resumeItem{} {Setup and integrated unittest framework into Jenkins for continuous integration, improving testing coverage by automating tedious manual testing tasks.}
- %       \resumeItem{} {Wrote over 100 Python unittests that provided critical test coverage where there was none previously, significantly reducing the number of bugs that re-appeared in system testing.}
+        \annotatedResumeItem{2015 } {Created an automated unit testing framework using Jenkins, Python unittest and Fabric that allowed developers to test remote embedded Linux systems from their local machines.}
+        \resumeItem{} {Setup and integrated unittest framework into Jenkins for continuous integration, improving testing coverage by automating tedious manual testing tasks.}
+        \resumeItem{} {Wrote over 100 Python unittests that provided critical test coverage where there was none previously, significantly reducing the number of bugs that re-appeared in system testing.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -205,21 +209,17 @@
 %%% Qualifications %%%
 \section{Qualifications}
   \resumeSubHeadingListStart
-    \resumeSubItem{Canadian Amateur Radio License}{Basic w/ Honors; Achieved 2017}
     \resumeSubItem{Canadian Pilot Certificate}{Small Remotely Piloted Aircraft System - Advanced Operations; Achieved 2019}
+    \resumeSubItem{Canadian Amateur Radio License}{Basic w/ Honors; Achieved 2017}
   \resumeSubHeadingListEnd
 
 %%% Awards %%%
 \section{Awards}
   \resumeSubHeadingListStart
-    \resumeSubItem{Winner}
-      {NW Hacks 2019, University of British Columbia; Achieved 2019}
+    \resumeSubItem{Winner, Best use of AWS, Best Domain, et al.}
+      {NW Hacks, University of British Columbia; \linebreak Achieved 2019, 2018, 2017}
     \resumeSubItem{1\textsuperscript{st} place}
       {Feeding 9 Billion Case Competition, University of British Columbia; Achieved 2018}
-    \resumeSubItem{Best use of AWS, et al.}
-      {NW Hacks 2018, University of British Columbia; Achieved 2018}
-    \resumeSubItem{Best Domain}
-      {NW Hacks 2017, University of British Columbia; Achieved 2017 }
     \resumeSubItem{2\textsuperscript{nd} place}
       {Calgary Collegiate Coding Competition, University of Calgary; Achieved 2016}
   \resumeSubHeadingListEnd
