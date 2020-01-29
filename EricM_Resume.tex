@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Eric Mikulin Resume, 2018
+% Eric Mikulin Resume, 2020
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -56,6 +56,12 @@
   }
 }
 
+\newcommand{\annotatedResumeItem}[2]{
+  \item\hspace{-14mm}\textit{#1}\hspace{4.5mm}\small{
+        {#2 \vspace{-2pt}}
+  }
+}
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -98,7 +104,7 @@
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\href{http://erismik.github.io/}{\Large Eric Mikulin}} & Email : \href{mailto:ericm99@gmail.com}{ericm99@gmail.com}\\
   \href{http://erismik.github.io/}{http://erismik.github.io/} & Mobile : +1-403-992-5497 \\
-  & 4523 W 12th Ave, Vancouver BC \\
+  & 1917 Trafalgar St, Vancouver BC \\
 \end{tabular*}
 
 %%% Summary %%%
@@ -109,21 +115,20 @@
 
 %%% PROGRAMMING SKILLS %%%
 \section{Programming Skills}
- \resumeSubHeadingListStart
+\resumeSubHeadingListStart
     \skillsSubheading {Languages :}
       \resumeItemListStart
         \skillsItem{Fluent} {C/C++, Java, Python, Javascript, Bash}
-        \skillsItem{Proficient} {Go,Ruby/Rails, Assembly, Verilog, Wiring, Rust}
-        \skillsItem{Familiar} {iOS (Swift), Android (Java)}
+        \skillsItem{Proficient} {Go, Ruby/Rails, Assembly, Verilog, Wiring, Rust}
+        \skillsItem{Familiar} {Scala, iOS (Swift), Android (Java)}
       \resumeItemListEnd
-
     \skillsSubheading {Technologies :}
       \resumeItemListStart
         \skillsItem{Operating Systems} {Linux, MacOS, Windows, iOS, Android}
         \skillsItem{Frameworks \& Libraries} {Django, Flask, Rails (Ruby), React, ReactiveX}
         \skillsItem{Tools} {Protobuf, Yocto, Jenkins, Terraform, CMake}
         \skillsItem{Database} {Postgresql, MySQl, MongoDB, Redis}
-        \skillsItem{Cloud} {AWS, Docker, Google Cloud Vision API, Azure Cognitive Systems, Gitlab CI}
+        \skillsItem{Cloud} {AWS, Docker, Kubernetes, Google Cloud Vision API, Azure Cognitive Systems, Gitlab CI, Github Actions}
       \resumeItemListEnd
  \resumeSubHeadingListEnd
 
@@ -133,17 +138,19 @@
 
     \resumeSubheading
       {Zaber Technologies Inc.}{Vancouver, BC}
-      {Software Co-op}{May 2019 -- Present}
+      {Software Co-op}{May 2019 -- December 2019}
       \resumeItemListStart
-        \resumeItem{} {Created the C++ wrappers and EJS templates to add the C++ language version of the Zaber Motion Library. This includes the setup of CI build, packaging and deployment for the finished library on multiple OSes and architectures.}
-        \resumeItem{} {Implemented core Go library functionality for the Zaber Motion Library. This included ASCII and binary protocol features and behaviour required to release the library.}
+        \resumeItem{} {Added C++ language capability to the Zaber Motion Library using EJS templates and protocol buffers. This includes the setup of the CI build, packaging and deployment systems for the finished library on multiple OSes and architectures.}
+        \resumeItem{} {Implemented core Go library functionality for the Zaber Motion Library. This included ASCII and binary communication protocol features required to release the library.}
+        \resumeItem{} {Optimized the delta-encoding algorithm used for cross CPU SPI transfers, resulting in a 12x increase in encoding performance. This was critical in getting Zaber's new controller to meet it's bandwidth requirements.}
+        \resumeItem{} {Wrote multiple C++ firmware features for a new controller, including I/O drivers and factory reset functions.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Ryffine Inc.}{Denver, CO}
       {Software Programmer (Contractor)}{January 2019 -- July 2019}
       \resumeItemListStart
-        \resumeItem{} {Created an automated content build, publish and dependency system using Gitlab CI. This new automated content delivery system allows writers to save time and effortlessly update their cloud content.}
+        \resumeItem{} {Created an automated build and publish system for DITA content using Docker and Gitlab CI. This new automated content delivery system allows writers to save time by effortlessly updating their cloud content.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -169,32 +176,23 @@
 
     \resumeSubheading
       {Minesense Technologies Ltd.}{Vancouver, BC} 
-      {Software Intern}{May 2017 -- August 2017}
+      {Software Intern}{Summers of 2015, 2016 and 2017}
       \resumeItemListStart
-        \resumeItem{} {General C/C++ application development and maintenance for multiple x86 based Linux embedded PCs.}
+      
+		\annotatedResumeItem{2017} {General C/C++ application development and maintenance for multiple x86 based Linux embedded PCs.}
         \resumeItem{} {Rewrote existing C++ code for transferring large amounts of spectrum data between embedded PCs into object oriented C++ classes. The new classes improved system performance and reduced the time to integrate new features.}
         \resumeItem{} {Wrote a kernel module to expose embedded application settings in the Linux /proc filesystem, reducing embedded system configuration time and complexity and therefore speeding up application development and testing as well as allowing run-time configuration changes to facilitate testing on a read-only disk.}
         \resumeItem{} {Wrote an automated update utility that allowed for automated updates across multiple write-protected disk partitions which reduced the update time from 20+ minutes to a few minutes and eliminated human error.}
         \resumeItem{} {Created over 10 new Yocto recipes and modified several existing recipes to integrate the code into a new automated build system, improving the time to configure builds by reducing it into a single configuration line.}
         \resumeItem{} {Created a web-based remote testing and install application, turning a 30+ minute error-prone manual install and configuration processes into simple automated task that could install the software in less that 5 minutes. The application could also automatically test the system configuration, making the developer time to test the device negligible.}
-      \resumeItemListEnd
 
-    \resumeSubheading
-      {Minesense Technologies Ltd.}{Vancouver, BC}
-      {Software Intern}{June 2016 -- August 2016}
-      \resumeItemListStart
-        \resumeItem{} {Created several Unix shell and Python scripts for use in an x86 based embedded Linux system.}
+        \annotatedResumeItem{2016 } {Created several Unix shell and Python scripts for use in an x86 based embedded Linux system.}
         \resumeItem{} {Manually patched and compiled the Linux kernel with real-time and other custom patches in order to improve the I/O throughput of the system, allowing it to achieve critical system performance requirements.}
         \resumeItem{} {Modified the Linux kernel init script and initramfs to boot with overlayfs (Union filesystem) to make the system read-only from disk. This improved the embedded PC robustness and reliability during frequent but unexpected power cuts.}
-      \resumeItemListEnd
 
-    \resumeSubheading
-      {Minesense Technologies Ltd.}{Vancouver, BC}
-      {Software Intern}{June 2015 -- August 2015}
-      \resumeItemListStart
-        \resumeItem{} {Created an automated unit testing framework using Python unittest and Fabric that allowed developers to test remote embedded Linux systems from their local machines.}
-        \resumeItem{} {Setup and integrated unittest framework into Jenkins for continuous integration, improving testing coverage by automating tedious manual testing tasks.}
-        \resumeItem{} {Wrote over 100 Python unittests that provided critical test coverage where there was none previously, significantly reducing the number of bugs that re-appeared in system testing.}
+        \annotatedResumeItem{2015 } {Created an automated unit testing framework using Jenkins, Python unittest and Fabric that allowed developers to test remote embedded Linux systems from their local machines.}
+        %\resumeItem{} {Setup and integrated unittest framework into Jenkins for continuous integration, improving testing coverage by automating tedious manual testing tasks.}
+        %\resumeItem{} {Wrote over 100 Python unittests that provided critical test coverage where there was none previously, significantly reducing the number of bugs that re-appeared in system testing.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -213,21 +211,17 @@
 %%% Qualifications %%%
 \section{Qualifications}
   \resumeSubHeadingListStart
+    \resumeSubItem{Canadian Pilot Certificate}{Small Remotely Piloted Aircraft System - Advanced Operations; Achieved 2019}
     \resumeSubItem{Canadian Amateur Radio License}{Basic w/ Honors; Achieved 2017}
-    \resumeSubItem{Canadian Pilot Certificate}{Small Remotely Piloted Aircraft System; Achieved 2019}
   \resumeSubHeadingListEnd
 
 %%% Awards %%%
 \section{Awards}
   \resumeSubHeadingListStart
-    \resumeSubItem{Winner}
-      {NW Hacks 2019, University of British Columbia; Achieved 2019}
+    \resumeSubItem{Winner, Best use of AWS, Best Domain, Best Crypto, et al.}
+      {NW Hacks, University of British Columbia; \linebreak Achieved 2020, 2019, 2018, 2017}
     \resumeSubItem{1\textsuperscript{st} place}
       {Feeding 9 Billion Case Competition, University of British Columbia; Achieved 2018}
-    \resumeSubItem{Best use of AWS, et al.}
-      {NW Hacks 2018, University of British Columbia; Achieved 2018}
-    \resumeSubItem{Best Domain}
-      {NW Hacks 2017, University of British Columbia; Achieved 2017 }
     \resumeSubItem{2\textsuperscript{nd} place}
       {Calgary Collegiate Coding Competition, University of Calgary; Achieved 2016}
   \resumeSubHeadingListEnd
@@ -236,22 +230,13 @@
 \section{Clubs \& Design Teams}
   \resumeSubHeadingListStart
     \resumeSubItem{UBC Unmanned Aircraft Team}
-      {Software Systems team lead; 2018 -- Present}
+      {Software Systems Team Lead; 2018 -- Present}
     \resumeSubItem{UBC Code the Change}
       {Full-Stack Developer on Chingari project; 2017 -- 2018}
     \resumeSubItem{UBC Baja Team}
       {Suspension Sub-team, microcontroller sensor project; 2016 -- 2017}
     \resumeSubItem{FRC Team 4719 - Technetronic Bulldogs}
       {Mechanical and Software Teams; 2013 -- 2016}
-  \resumeSubHeadingListEnd
-
-%%% Hobbies %%%
-\section{Hobbies}
-  \resumeSubHeadingListStart
-      \resumeSubItem{Unmanned Aircraft}{Design, build and pilot remote and unmanned aircraft systems}
-    \resumeSubItem{Outdoor Activities}{Hiking and camping; Mountain and road biking; Longboarding and Skateboarding}
-    \resumeSubItem{3D Printing}{Design and 3D print objects}
-    \resumeSubItem{Film Enthusiast}{Enjoy watching classic movies; Enrolled in Film Studies classes}      	 
   \resumeSubHeadingListEnd
 
 \vspace{5mm}
