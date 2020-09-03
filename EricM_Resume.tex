@@ -4,7 +4,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Latex Header
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
@@ -17,6 +17,9 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
+
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -44,6 +47,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Custom Commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\textItem}[1]{
   \item{
     {#1 \vspace{-2pt}}
@@ -57,7 +61,7 @@
 }
 
 \newcommand{\annotatedResumeItem}[2]{
-  \item\hspace{-14mm}\textit{#1}\hspace{4.5mm}\small{
+  \item\hspace{-14.5mm}\textit{#1}\hspace{4.5mm}\small{
         {#2 \vspace{-2pt}}
   }
 }
@@ -97,35 +101,35 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Resume Start
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{document}
+%\fontfamily{phv}\selectfont
 
 %%% HEADING %%%
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://erismik.github.io/}{\Large Eric Mikulin}} & Email : \href{mailto:ericm99@gmail.com}{ericm99@gmail.com}\\
-  \href{http://erismik.github.io/}{http://erismik.github.io/} & Mobile : +1-403-992-5497 \\
-  & 1917 Trafalgar St, Vancouver BC \\
+  \textbf{\href{https://ericmikulin.ca/}{\Large Eric Mikulin}} & Email : \href{mailto:ericm99@gmail.com}{ericm99@gmail.com}\\
+  \textit{Software Developer} & Mobile : +1-403-992-5497 \\
+  \href{https://ericmikulin.ca/}{https://ericmikulin.ca/} & 1917 Trafalgar St, Vancouver BC \\
 \end{tabular*}
 
 %%% Summary %%%
-\section{Software Developer}
- \resumeSubHeadingListStart
-  \textItem{Experienced embedded Linux and full-stack cloud Software Developer looking for internship or co-op opportunities.}
- \resumeSubHeadingListEnd
+%\section{Software Developer}
+% \resumeSubHeadingListStart
+%  \textItem{Experienced embedded Linux and full-stack cloud Software Developer looking for full time opportunities.}
+% \resumeSubHeadingListEnd
 
 %%% PROGRAMMING SKILLS %%%
 \section{Programming Skills}
 \resumeSubHeadingListStart
     \skillsSubheading {Languages :}
       \resumeItemListStart
-        \skillsItem{Fluent} {C/C++, Java, Python, Javascript, Bash}
-        \skillsItem{Proficient} {Go, Ruby/Rails, Assembly, Verilog, Wiring, Rust}
+        \skillsItem{Fluent} {C/C++, Rust, Python, Javascript, Bash}
+        \skillsItem{Proficient} {Go, Ruby, Assembly, Verilog, Wiring, Java}
         \skillsItem{Familiar} {Scala, iOS (Swift), Android (Java)}
       \resumeItemListEnd
     \skillsSubheading {Technologies :}
       \resumeItemListStart
         \skillsItem{Operating Systems} {Linux, MacOS, Windows, iOS, Android}
-        \skillsItem{Frameworks \& Libraries} {Django, Flask, Rails (Ruby), React, ReactiveX}
+        \skillsItem{Frameworks \& Libraries} {Django, Flask, Rails (Ruby), React, NodeJs, ReactiveX}
         \skillsItem{Tools} {Protobuf, Yocto, Jenkins, Terraform, CMake}
         \skillsItem{Database} {Postgresql, MySQl, MongoDB, Redis}
         \skillsItem{Cloud} {AWS, Docker, Kubernetes, Google Cloud Vision API, Azure Cognitive Systems, Gitlab CI, Github Actions}
@@ -135,6 +139,15 @@
 %%% EXPERIENCE %%%
 \section{Experience}
   \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Hootsuite Inc.}{Vancouver, BC}
+      {Software Co-op}{January 2020 -- August 2020}
+      \resumeItemListStart
+        \resumeItem{} {Added logging, statsd based reporting and Sumologic dashboard for React and Scala based video transcoding service in order to verify that the acceptance and performance criteria were being met.}
+        \resumeItem{} {Extended LinkedIn image posting functionality in React and Scala services to allow posting of multiple images, resulting in a 2\% increase in total LinkedIn posts through the Hootsuite service.}
+        \resumeItem{} {Fixed software bugs, added UI elements and added both backend and frontend features throughout the Hootsuite product.}
+      \resumeItemListEnd
 
     \resumeSubheading
       {Zaber Technologies Inc.}{Vancouver, BC}
@@ -165,7 +178,7 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {Novax Industries}{Delta, BC}
+      {Novax Industries Corp.}{Delta, BC}
       {Software Programmer (Contractor)}{October 2017 -- March 2018}
       \resumeItemListStart
         \resumeItem{} {Wrote C userspace Linux drivers for an ARM based custom embedded system to enable use of the i2c gpio and sd card reader devices.}
@@ -190,7 +203,7 @@
         \resumeItem{} {Manually patched and compiled the Linux kernel with real-time and other custom patches in order to improve the I/O throughput of the system, allowing it to achieve critical system performance requirements.}
         \resumeItem{} {Modified the Linux kernel init script and initramfs to boot with overlayfs (Union filesystem) to make the system read-only from disk. This improved the embedded PC robustness and reliability during frequent but unexpected power cuts.}
 
-        \annotatedResumeItem{2015 } {Created an automated unit testing framework using Jenkins, Python unittest and Fabric that allowed developers to test remote embedded Linux systems from their local machines.}
+        %\annotatedResumeItem{2015 } {Created an automated unit testing framework using Jenkins, Python unittest and Fabric that allowed developers to test remote embedded Linux systems from their local machines.}
         %\resumeItem{} {Setup and integrated unittest framework into Jenkins for continuous integration, improving testing coverage by automating tedious manual testing tasks.}
         %\resumeItem{} {Wrote over 100 Python unittests that provided critical test coverage where there was none previously, significantly reducing the number of bugs that re-appeared in system testing.}
       \resumeItemListEnd
@@ -202,10 +215,10 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of British Columbia}{Vancouver, BC}
-      {Bachelors of Applied Science}{Sept. 2016 -- Expected May 2022}
-    \resumeSubheading
-      {Sir Winston Churchill HS}{Calgary, AB}
-      {International Baccalaureate Curriculum}{Sept. 2013 -- July 2016}
+      {Bachelors of Applied Science, Computer Engineering}{Sept. 2016 -- December 2020}
+%    \resumeSubheading
+%      {Sir Winston Churchill HS}{Calgary, AB}
+%      {International Baccalaureate Curriculum}{Sept. 2013 -- July 2016}
   \resumeSubHeadingListEnd
 
 %%% Qualifications %%%
