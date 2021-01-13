@@ -108,7 +108,7 @@
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\href{https://ericmikulin.ca/}{\Large Eric Mikulin}} & Email : \href{mailto:ericm99@gmail.com}{ericm99@gmail.com}\\
   \textit{Software Developer} & Mobile : +1-403-992-5497 \\
-  \href{https://ericmikulin.ca/}{https://ericmikulin.ca/} & 1917 Trafalgar St, Vancouver BC \\
+  \href{https://ericmikulin.ca/}{https://ericmikulin.ca/} & 1241 E 13 Ave, Vancouver BC \\
 \end{tabular*}
 
 %%% Summary %%%
@@ -130,7 +130,7 @@
       \resumeItemListStart
         \skillsItem{Operating Systems} {Linux, MacOS, Windows, iOS, Android}
         \skillsItem{Frameworks \& Libraries} {Django, Flask, Rails (Ruby), React, NodeJs, ReactiveX}
-        \skillsItem{Tools} {Protobuf, Yocto, Jenkins, Terraform, CMake}
+        \skillsItem{Tools} {Protobuf, Yocto, Jenkins, Terraform, CMake, TeamCity}
         \skillsItem{Database} {Postgresql, MySQl, MongoDB, Redis}
         \skillsItem{Cloud} {AWS, Docker, Kubernetes, Google Cloud Vision API, Azure Cognitive Systems, Gitlab CI, Github Actions}
       \resumeItemListEnd
@@ -141,12 +141,21 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
+      {Tableau Software}{Vancouver, BC}
+      {Software Engineer Intern }{September 2020 -- December 2020}
+      \resumeItemListStart
+        \resumeItem{} {Developed a TeamCity ORM library for use in multiple other projects.}
+        \resumeItem{} {Created several AWS Lambda endpoints using Python and the Serverless framework. These endpoints interacted with TeamCity, Microsoft Teams and Perforce instances in order to automate manual operations processes. One such endpoint greatly reduced operations overhead by turning a manual 10+ step changelist backout process into a single automated API call.}
+    \resumeItemListEnd
+
+
+    \resumeSubheading
       {Hootsuite Inc.}{Vancouver, BC}
-      {Software Co-op}{January 2020 -- August 2020}
+      {Plan \& Create Software Co-op}{January 2020 -- August 2020}
       \resumeItemListStart
         \resumeItem{} {Added logging, statsd based reporting and Sumologic dashboard for React and Scala based video transcoding service in order to verify that the acceptance and performance criteria were being met.}
         \resumeItem{} {Extended LinkedIn image posting functionality in React and Scala services to allow posting of multiple images, resulting in a 2\% increase in total LinkedIn posts through the Hootsuite service.}
-        \resumeItem{} {Fixed software bugs, added UI elements and added both backend and frontend features throughout the Hootsuite product.}
+        \resumeItem{} {Fixed software bugs, added UI elements and added both Scala backend and React frontend features throughout the Hootsuite product.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -155,7 +164,7 @@
       \resumeItemListStart
         \resumeItem{} {Added C++ language capability to the Zaber Motion Library using EJS templates and protocol buffers. This includes the setup of the CI build, packaging and deployment systems for the finished library on multiple OSes and architectures.}
         \resumeItem{} {Implemented core Go library functionality for the Zaber Motion Library. This included ASCII and binary communication protocol features required to release the library.}
-        \resumeItem{} {Optimized the delta-encoding algorithm used for cross CPU SPI transfers, resulting in a 12x increase in encoding performance. This was critical in getting Zaber's new controller to meet it's bandwidth requirements.}
+        \resumeItem{} {Optimized the delta-encoding algorithm used for cross CPU SPI transfers, resulting in a 12x increase in encoding performance. This was a critical part in getting Zaber's new controller to meet it's bandwidth requirements.}
         \resumeItem{} {Wrote multiple C++ firmware features for a new controller, including I/O drivers and factory reset functions.}
       \resumeItemListEnd
 
@@ -182,9 +191,9 @@
       {Software Programmer (Contractor)}{October 2017 -- March 2018}
       \resumeItemListStart
         \resumeItem{} {Wrote C userspace Linux drivers for an ARM based custom embedded system to enable use of the i2c gpio and sd card reader devices.}
-        \resumeItem{} {Wrote Python and Bash scripts for managing logs on the system.}
+%        \resumeItem{} {Wrote Python and Bash scripts for managing logs on the system.}
         \resumeItem{} {Updated the XML configuration library to speed up and make the configuration system more robust, as well as align with additional new specs.}
-        \resumeItem{} {Created Yocto recipes and layers for the embedded device, shortening the time to deploy a custom Linux distribution to the embedded device, saving developer time during development and testing.}
+%        \resumeItem{} {Created Yocto recipes and layers for the embedded device, shortening the time to deploy a custom Linux distribution to the embedded device, saving developer time during development and testing.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -196,11 +205,11 @@
         \resumeItem{} {Rewrote existing C++ code for transferring large amounts of spectrum data between embedded PCs into object oriented C++ classes. The new classes improved system performance and reduced the time to integrate new features.}
         \resumeItem{} {Wrote a kernel module to expose embedded application settings in the Linux /proc filesystem, reducing embedded system configuration time and complexity and therefore speeding up application development and testing as well as allowing run-time configuration changes to facilitate testing on a read-only disk.}
         \resumeItem{} {Wrote an automated update utility that allowed for automated updates across multiple write-protected disk partitions which reduced the update time from 20+ minutes to a few minutes and eliminated human error.}
-        \resumeItem{} {Created over 10 new Yocto recipes and modified several existing recipes to integrate the code into a new automated build system, improving the time to configure builds by reducing it into a single configuration line.}
+%        \resumeItem{} {Created over 10 new Yocto recipes and modified several existing recipes to integrate the code into a new automated build system, improving the time to configure builds by reducing it into a single configuration line.}
         \resumeItem{} {Created a web-based remote testing and install application, turning a 30+ minute error-prone manual install and configuration processes into simple automated task that could install the software in less that 5 minutes. The application could also automatically test the system configuration, making the developer time to test the device negligible.}
 
         \annotatedResumeItem{2016 } {Created several Unix shell and Python scripts for use in an x86 based embedded Linux system.}
-        \resumeItem{} {Manually patched and compiled the Linux kernel with real-time and other custom patches in order to improve the I/O throughput of the system, allowing it to achieve critical system performance requirements.}
+%        \resumeItem{} {Manually patched and compiled the Linux kernel with real-time and other custom patches in order to improve the I/O throughput of the system, allowing it to achieve critical system performance requirements.}
         \resumeItem{} {Modified the Linux kernel init script and initramfs to boot with overlayfs (Union filesystem) to make the system read-only from disk. This improved the embedded PC robustness and reliability during frequent but unexpected power cuts.}
 
         %\annotatedResumeItem{2015 } {Created an automated unit testing framework using Jenkins, Python unittest and Fabric that allowed developers to test remote embedded Linux systems from their local machines.}

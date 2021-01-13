@@ -1,0 +1,80 @@
+Tableau Software
+Vancouver, BC
+Software Engineer Intern
+September 2020 -- December 2020
+
+- Developed a TeamCity ORM library for use in multiple other projects.
+- Created several AWS Lambda endpoints using Python and the Serverless framework. These endpoints interacted with TeamCity, Microsoft Teams and Perforce instances in order to automate manual operations processes. One such endpoint greatly reduced operations overhead by turning a manual 10+ step changelist backout process into a single automated API call.
+
+
+Hootsuite Inc.
+Vancouver, BC
+Software Co-op
+January 2020 -- August 2020
+
+- Added logging, statsd based reporting and Sumologic dashboard for React and Scala based video transcoding service in order to verify that the acceptance and performance criteria were being met.
+- Extended LinkedIn image posting functionality in React and Scala services to allow posting of multiple images, resulting in a 2% increase in total LinkedIn posts through the Hootsuite service.
+- Fixed software bugs, added UI elements and added both backend and frontend features throughout the Hootsuite product.
+
+
+Zaber Technologies Inc.
+Vancouver, BC
+Software Co-op
+May 2019 -- December 2019}
+
+- Added C++ language capability to the Zaber Motion Library using EJS templates and protocol buffers. This includes the setup of the CI build, packaging and deployment systems for the finished library on multiple OSes and architectures.
+- Implemented core Go library functionality for the Zaber Motion Library. This included ASCII and binary communication protocol features required to release the library.
+- Optimized the delta-encoding algorithm used for cross CPU SPI transfers, resulting in a 12x increase in encoding performance. This was critical in getting Zaber's new controller to meet it's bandwidth requirements.
+- Wrote multiple C++ firmware features for a new controller, including I/O drivers and factory reset functions.
+
+
+Ryffine Inc.
+Denver, CO
+Software Programmer (Contractor)
+January 2019 -- July 2019
+
+- Created an automated build and publish system for DITA content using Docker and Gitlab CI. This new automated content delivery system allows writers to save time by effortlessly updating their cloud content.
+
+
+D-Wave Systems Inc.
+Burnaby, BC
+Systems Software Co-op
+May 2018 -- December 2018
+
+- Wrote API endpoints for D-Wave's Leap cloud service back-end to enable critical front-end user interface functionality such as maintenance notifications and solver access.
+- Created a large number of relevant Django unit tests alongside the API endpoints to increase test coverage and reduce the number of regression bugs encountered.
+- Created front-end views for maintenance notifications, QPU solver availability and user profiles using the React JS framework.
+- Wrote and maintained back-end integration between the Leap web application and the Business team's Zendesk and Salesforce systems so that the Business team could access new leads and generate important reports.
+- Created an automated docs website publishing pipeline using Terraform and Jenkins that enabled the technical writers to publish docs without involving developers. This saved both developer and writer time by completely automating what was a long manual build process.
+
+
+Novax Industries Corp.
+Delta, BC
+Software Programmer (Contractor)
+October 2017 -- March 2018
+
+- Wrote C userspace Linux drivers for an ARM based custom embedded system to enable use of the i2c gpio and sd card reader devices.
+- Wrote Python and Bash scripts for managing logs on the system.
+- Updated the XML configuration library to speed up and make the configuration system more robust, as well as align with additional new specs.
+- Created Yocto recipes and layers for the embedded device, shortening the time to deploy a custom Linux distribution to the embedded device, saving developer time during development and testing.
+
+
+Minesense Technologies Ltd.
+Vancouver, BC}
+Software Intern
+Summers of 2015, 2016 and 2017
+
+- General C/C++ application development and maintenance for multiple x86 based Linux embedded PCs.
+- Rewrote existing C++ code for transferring large amounts of spectrum data between embedded PCs into object oriented C++ classes. The new classes improved system performance and reduced the time to integrate new features.
+- Wrote a kernel module to expose embedded application settings in the Linux /proc filesystem, reducing embedded system configuration time and complexity and therefore speeding up application development and testing as well as allowing run-time configuration changes to facilitate testing on a read-only disk.
+- Wrote an automated update utility that allowed for automated updates across multiple write-protected disk partitions which reduced the update time from 20+ minutes to a few minutes and eliminated human error.
+- Created over 10 new Yocto recipes and modified several existing recipes to integrate the code into a new automated build system, improving the time to configure builds by reducing it into a single configuration line.
+- Created a web-based remote testing and install application, turning a 30+ minute error-prone manual install and configuration processes into simple automated task that could install the software in less that 5 minutes. The application could also automatically test the system configuration, making the developer time to test the device negligible.
+
+- Created several Unix shell and Python scripts for use in an x86 based embedded Linux system.
+- Manually patched and compiled the Linux kernel with real-time and other custom patches in order to improve the I/O throughput of the system, allowing it to achieve critical system performance requirements.
+- Modified the Linux kernel init script and initramfs to boot with overlayfs (Union filesystem) to make the system read-only from disk. This improved the embedded PC robustness and reliability during frequent but unexpected power cuts.
+
+- Created an automated unit testing framework using Jenkins, Python unittest and Fabric that allowed developers to test remote embedded Linux systems from their local machines.
+- Setup and integrated unittest framework into Jenkins for continuous integration, improving testing coverage by automating tedious manual testing tasks.
+- Wrote over 100 Python unittests that provided critical test coverage where there was none previously, significantly reducing the number of bugs that re-appeared in system testing.
